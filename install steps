@@ -1,0 +1,47 @@
+Prometheus-grafana install
+1.launch a instance for Prometheus(monitor)
+2.install git in the instance
+3.next install Prometheus.sh file
+4.run the script
+5.allocate a port number for this Prometheus in security group
+6.the check whether its running in that port
+Installation history
+1  sudo apt update
+    2  sudo apt install git -y
+    3  git clone https://github.com/yasminjeelani/Prometheus_Grafana.git
+    4  cd Prometheus_Grafana
+    5  ls
+    6  ./install-prometheus.sh
+    7  sudo -i
+    8  sudo systemctl restart prometheus
+    9  sudo systemctl status prometheus
+   10  cd ...
+   11  cd
+   12  cd Prometheus_Grafana
+   13  ls
+   14  ./ install-grafana.sh 
+   15  ./install-grafana.sh 
+   16  history
+
+1  vi node-exporter.sh
+    2  sudo apt update
+    3  sudo apt install git -y
+    4  git clone https://github.com/yasminjeelani/Prometheus_Grafana.git
+    5  ls
+    6  cd Prometheus_Grafana
+    7  ls
+    8  ./install-node-exporter.sh
+    9  history
+
+Install node exporter
+1.create a instance for node exporter
+2.git clone and run node-exporter.sh file
+3. allocate a port for the node
+4.check whether port is running
+Grafana
+1.install grafana in the same instance Prometheus running
+2.runn grafana.sh file
+3. allocate the port number for grafana and node here.
+4. open the port and check
+Now the grafana is running in the port
+
